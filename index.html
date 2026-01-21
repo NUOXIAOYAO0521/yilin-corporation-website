@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>宜林公司</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yilin Rent-A-Car</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="text-align:center;padding-top:100px;">
-<h1>宜林公司网站</h1>
-<p>终于上线了 ✅</p>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Yilin Rent-A-Car</h1>
+            <nav>
+                <ul>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#stores">Stores</a></li>
+                    <li><a href="#cars">Vehicles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="search" class="search-section">
+            <h2>Find Your Car</h2>
+            <form>
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter city or location" required>
+                
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+                
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date" required>
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="stores" class="stores-section">
+            <h2>Our Stores</h2>
+            <div class="store">
+                <h3>Tokyo Branch</h3>
+                <p>1-1 Shibuya, Tokyo</p>
+                <p>Phone: +81-3-1234-5678</p>
+            </div>
+            <div class="store">
+                <h3>Osaka Branch</h3>
+                <p>2-2 Namba, Osaka</p>
+                <p>Phone: +81-6-8765-4321</p>
+            </div>
+        </section>
+        <section id="cars" class="cars-section">
+            <h2>Our Vehicles</h2>
+            <div class="car">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Toyota Prius</h3>
+                <p>Compact, Automatic, 5 Seats</p>
+                <p>Price: ¥5,000/day</p>
+                <button class="btn-reserve">Reserve</button>
+            </div>
+            <div class="car">
+                <img src="car2.jpg" alt="Car 2">
+                <h3>Nissan Note</h3>
+                <p>Compact, Manual, 5 Seats</p>
+                <p>Price: ¥4,500/day</p>
+                <button class="btn-reserve">Reserve</button>
+            </div>
+            <div class="car">
+                <img src="car3.jpg" alt="Car 3">
+                <h3>Honda Fit</h3>
+                <p>Compact, Automatic, 4 Seats</p>
+                <p>Price: ¥4,800/day</p>
+                <button class="btn-reserve">Reserve</button>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Email: info@yilin-rentacar.com</p>
+            <p>Phone: +81-3-9876-5432</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Yilin Rent-A-Car. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
